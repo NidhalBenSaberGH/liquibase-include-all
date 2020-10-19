@@ -7,5 +7,6 @@
 <!--    <includeAll path="db/changelog/changes" relativeToChangelogFile="true" />   NOT working -->
 <!--    <includeAll path="src/main/resources/db/changelog/changes/" relativeToChangelogFile="false "/> NOT working -->
     <includeAll path="db/changelog/changes" relativeToChangelogFile="false"/>
+    <includeAll path="db/changelog/other-changes" relativeToChangelogFile="false"/>
     
 </databaseChangeLog>

@@ -91,6 +91,13 @@
 					<changeLogFile>src/main/resources/db/changelog/db.changelog-master.xml</changeLogFile>
 					<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>update</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
