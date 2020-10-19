@@ -61,6 +61,12 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -78,7 +84,7 @@
 					<username>${liquibase.username}</username>
 					<password>${liquibase.password}</password>
 					<outputChangeLogFile>src/main/resources/db/changelog/liquibase-outputChangeLog.postgresql.sql</outputChangeLogFile>
-					<defaultSchemaName>myschema</defaultSchemaName>
+					<defaultSchemaName>byblos</defaultSchemaName>
 					<verbose>true</verbose>
 					<contexts>dev,prod,test</contexts>
 					<logging>debug</logging>
